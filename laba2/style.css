@@ -1,0 +1,12 @@
+.nure {
+    border-radius: 0 10px 10px 0;
+    width: 300px;
+    background: #999;
+    color: #fff;
+    position: relative;
+    min-height: 100px;
+    top: 100px; left: -320px;
+    border-right: 20px solid #fc0;
+    padding: 10px;
+    transition: left 1s;
+   }
