@@ -1,5 +1,5 @@
 # Интернет Технологии
 
-[Лаболаторная №1](https://oleh2210.github.io/iteh_labs/laba1/)
+[Лабораторная №1](https://oleh2210.github.io/iteh_labs/laba1/iteh_chubuk.html)
 
-[Лаболаторная №2](https://oleh2210.github.io/iteh_labs/laba2/)
+[Лабораторная №2](https://oleh2210.github.io/iteh_labs/laba2/iteh_2lb.html)
