@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Contacts</title>
+  <link href="style.css" rel="stylesheet">
+  <style>
+   body {
+    margin: 0;/* отступ */
+   }
+   #ourid{
+   	color: red;
+   }
+   .nure img {
+    float: left;
+    position: relative;
+    margin: 0 10px 0 0;
+   }
+   .nure::after {
+    content: 'Contacts'; /* Выводим текст */
+    color: #000; /* Цвет надписи */
+    position: absolute; /* Абсолютное позиционирование */
+    right: -37px; bottom: 50px;
+    transform: rotate(-90deg); /* Поворачиваем текст */
+   }
+   .nure:hover {
+    left: 0; /* При наведении сдвигаем вправо */
+   }
+  </style>
+ </head>
+ <body>
+  <div style="color:red" class="nure" id="ourid">
+   <img src="sponsor-nure.png" alt="" width="100" height="100">
+   Сайт ХНУРЭ: <br/>
+   http://nure.ua/
+  </div>
+ </body>
+</html>
