@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	 <title>
+     Лабораторная работа 3, 4 вариант
+     <b>Чубук О.А., КИУКИ-17-5</b>
+     </title>
+
+     <script>
+
+function set()
+{
+	var result = prompt('Введите интервал');
+
+document.write('<style> th { background-color: #F60 } </style>');
+
+document.write ('<table width="100%" border="1" cellspacing="' + result + '">');/резалт - должен вызываться, а он не хочет/
+for (i=1; i<=6; i++) 
+{
+  document.writeln("<tr>");
+  for (j=1; j<=6; j++)
+  {
+	if (i==1) 
+	{
+		document.write("<th>" +nameTable(10)+ "<\/th>");
+	}
+	else 
+	{	
+		if(i%2==0)
+			{
+			document.write("<td style ='background-color: #F10'>" +getRandomInt(1, 100)+ "<\/td>"); 
+	        }
+	    else 
+	    {
+	    	document.write("<td style ='background-color: #F90'>" +getRandomInt(1, 1000)+ "<\/td>"); 
+	    }
+    }
+  }
+  document.writeln("<\/tr>");
+}
+document.write ("<\/table> ");
+
+}
+
+function nameTable(length) 
+{
+     var result = '';
+     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+     var charactersLength = characters.length;
+     for ( var i = 0; i < length; i++ ) 
+     {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+     }
+  return result;
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+</script>
+</head>
+<body onload="set()">
+</body>
+</html>
